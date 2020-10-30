@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Teste materialize </title>
-    </head>
-    <!-- Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<head>
+    <title> Teste materialize </title>
+</head>
+<!-- Materialize CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <body>
     <!-- Teste -->
-    <div class="card-panel red">
-        Olá mundo pimbadores
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+                        require little markup to use effectively.</p>
+                </div>
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a href="#test4">Test 1</a></li>
+                        <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                        <li class="tab"><a href="#test6">Test 3</a></li>
+                    </ul>
+                </div>
+                <div class="card-content grey lighten-4">
+                    <div id="test4">Test 1</div>
+                    <div id="test5">Test 2</div>
+                    <div id="test6">Test 3</div>
+                </div>
+            </div>
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+        
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div>
+            </div>
+        </div>
     </div>
 
+
     <!-- Materialize JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-1.12.0.js" 
-    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+    </script>
 </body>
+
 </html>

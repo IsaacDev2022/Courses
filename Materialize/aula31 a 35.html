@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Components - form: -->
+    <div class="row container">
+        <form class="col s8">
+            <div class="card-panel blue">
+                <h2 class="flow-text white-text"> Preencha o formulário abaixo: </h2>
+            </div><br>
+            <div class="input-field s6">
+                <i class="material-icons prefix"> account_circle</i>
+                <input type="text" id="name" placeholder="nome">
+                <label for="nome"> Nome completo: </label>
+            </div><br>
+            <div class="input-field s6">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email" placeholder="email" class="validate">
+                <label for="email"> Email: </label>
+                <span class="helper-text" data-error="Email inválido" data-success="Válido"></span>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">textsms</i>
+                            <input type="text" id="autocomplete-input" class="autocomplete">
+                            <label for="autocomplete-input">Autocomplete</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-field s6">
+                <select>
+                    <option value="" disabled selected>Escolha uma das opções: </option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+            <div class="input-field col s12 m6">
+                <select class="icons">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="" data-icon="img/batman.jpg" class="left">example 1</option>
+                    <option value="" data-icon="" class="left">example 2</option>
+                    <option value="" data-icon="" class="left">example 3</option>
+                </select>
+                <label>Images in select</label>
+            </div>
+            <div class="input-field s6">
+                <input type="text" class="datepicker">
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <p>
+                        <label>
+                          <input name="group1" type="checkbox"/>
+                          <span>Red</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group1" type="radio" class="with-gap">
+                            <span>Yellow</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <div class="input-field col s6">
+                <p class="range-field">
+                    <input type="range" min="0" max="100">
+                </p>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
